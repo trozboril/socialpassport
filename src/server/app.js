@@ -49,7 +49,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 passport.use(new LinkedInStrategy({
   clientID: process.env.LINKEDIN_API_KEY,
   clientSecret: process.env.LINKEDIN_SECRET_KEY,
-  callbackURL: "https://desolate-escarpment-73454.herokuapp.com/",
+  callbackURL: process.env.HOST,
   state: true,
   scope: ['r_emailaddress', 'r_basicprofile']
 }, function(accessToken, refreshToken, profile, done) {
