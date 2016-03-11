@@ -5,10 +5,18 @@
 
 {% block content %}
 
+
   <div class="container">
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+  {% if user %}
+  <img src='{{ user.avatar_url }}'>
+    <h1>{{ title }} {{ user.preferred_name }} {{ user.last_name }}</h1>
+    <p>Welcome to your profile {{ user.preferred_name }}!</p>
+    <p>You're email is {{ user.email }}</p>
+  {% else %}
+  	<h1>{{ title }}<h1>
+  	<h3>Please log in... <a href='/auth/linkedin'>here</a></h3>
+  {% endif %}
 
   </div>
 

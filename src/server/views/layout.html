@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <div class='nav'>
+      <ul>
+        <li><a href='/'><button class='home'>Home</button></a></li>
+        <li><a href='/auth/linkedin'><button class='linkedin'>Linkedin Login</button></a></li>
+        <li><a href='/auth/logout'><button class='logout'>Logout</button></a></li>
+      </ul>
+    </div>
     {% block content %}
     {% endblock %}
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>

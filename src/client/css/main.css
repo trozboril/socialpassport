@@ -1,8 +1,35 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-family: sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.nav {
+	background-color: #333;
+	color: white;
+	height: 50px;
+	width: 100%;
+}
+
+li {
+	list-style: none;
+}
+img {
+	float: left;
+	height: 100px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+button {
+	height: 30px;
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: 2px 2px black;
+	float: left;
+	color: black;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+button:hover {
+	box-shadow: 2px 2px 1px white;
 }
